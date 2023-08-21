@@ -17,7 +17,9 @@
   "devDependencies": {
     "@types/lodash": "^4.14.192",
     "@types/path-browserify": "^1.0.0",
-    "typescript": "^5.0.3"
+    "typescript": "^5.0.3",
+    "prettier": "^3.0.2",
+    "release-it": "^16.1.5"
   },
   "sideEffects": false,
   "dependencies": {
