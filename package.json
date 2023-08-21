@@ -1,0 +1,33 @@
+{
+  "name": "ah-memory-fs",
+  "version": "1.0.17",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "scripts": {
+    "ci": "prettier --check src && tsc -p tsconfig.json --noEmit",
+    "build": "tsc -p tsconfig.json --outDir dist",
+    "prepublishOnly": "npm run ci && npm run build",
+    "release": "npm run ci && release-it"
+  },
+  "author": "concefly@foxmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.192",
+    "@types/path-browserify": "^1.0.0",
+    "typescript": "^5.0.3"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "ah-event-bus": "^4.0.14",
+    "ah-logger": "^3.2.6",
+    "ah-pure-md5": "^1.0.1",
+    "ah-tree-helper": "^2.0.6",
+    "lodash": "^4.17.21",
+    "lru_map": "^0.4.1",
+    "minimatch": "^8.0.3",
+    "path-browserify": "^1.0.1"
+  }
+}
