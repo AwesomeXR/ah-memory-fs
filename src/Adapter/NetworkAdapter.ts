@@ -27,7 +27,10 @@ export class NetworkAdapter extends BaseAdapter {
 
   private _cache = new LRUMap<string, Promise<ArrayBuffer>>(32);
 
-  constructor(readonly baseURL: string, private customFetch: (url: string) => Promise<ArrayBuffer>) {
+  constructor(
+    readonly baseURL: string,
+    private customFetch: (url: string) => Promise<ArrayBuffer>
+  ) {
     super();
     this._cache.limit = 32;
   }
