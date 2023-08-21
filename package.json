@@ -22,7 +22,7 @@
   "sideEffects": false,
   "dependencies": {
     "ah-event-bus": "^4.0.14",
-    "ah-logger": "^3.2.6",
+    "ah-logger": "^3.2.7",
     "ah-pure-md5": "^1.0.1",
     "ah-tree-helper": "^2.0.6",
     "lodash": "^4.17.21",
