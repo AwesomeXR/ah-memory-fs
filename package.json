@@ -9,8 +9,7 @@
   "scripts": {
     "ci": "prettier --check src && tsc -p tsconfig.json --noEmit",
     "build": "tsc -p tsconfig.json --outDir dist",
-    "prepublishOnly": "npm run ci && npm run build",
-    "release": "npm run ci && release-it"
+    "release": "npm run ci && npm run build && release-it"
   },
   "author": "concefly@foxmail.com",
   "license": "MIT",
